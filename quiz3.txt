@@ -1,0 +1,34 @@
+buka terminal dengan root sebagai current folder
+
+cd /mnt/c/perkuliahan/dot/pert4
+
+ketik docker-exec -it lumen_php bash
+
+composer install
+
+cd src
+
+composer create-project --prefer-dist laravel/lumen
+
+cd .env
+
+masukan ip vEthernet sebagai host > database name > username > password > port 
+
+buat controller
+php artisan make:controller UserController
+
+buat model
+php artisan make:model UserModel
+
+locate models
+
+buat model user sesuai dengan skema database pertama
+
+locate routes/web.php
+
+buat routes / endpoint yang mengarahkan ke UserController dengan metode http get dan post
+
+locate http/controllers/UserController
+buat function CRUD
+
+buka postman lalu masukan url berformat [ip vEthernet wsl:port]/[endpoint]
