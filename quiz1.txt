@@ -1,0 +1,26 @@
+buka navicat
+
+new connection > mysql > masukan connection name "quiz1" > host 127.0.0.1 > port 33366 > user root > password p455w0rd.
+
+test connection
+
+tekan ok
+
+klik 2x koneksi quiz1 sampai berubah warna hijau
+
+klik kanan koneksi quiz1 lalu pilih new database
+
+masukkan database name "quiz1" lalu tekan ok
+
+klik kanan queries lalu pilih new queries
+
+masukkan 
+CREATE TABLE `product_table` (
+	`id` INT,
+	`title` VARCHAR(255),
+	`harga` INT,
+	PRIMARY KEY (`id`)
+);
+pada kolom query
+
+lalu tekan run.
