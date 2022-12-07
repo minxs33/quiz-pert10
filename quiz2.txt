@@ -1,0 +1,24 @@
+buka pert8-14 di VSCode, navigasi ke user_service>app>api>db.py
+masukan ip vEthernet ke conn
+conn = MongoClient('mongodb://root:p455w0rd@[IP yang tadi dicopy]:27017/users?authSource=admin')
+
+docker-compse up -d --build
+
+Buka navicat, new connection (MongoDB)
+
+- Connection Name: sql-local
+- Authentication: Password
+- User Name: root
+- Password: p455w0rd
+
+docker exec -it mongo mongosh --username root --password p455w0rd
+
+use category
+
+db.createCollection("product")
+
+db.product.insert([{"id": "1", "title": "Sepeda", "harga": "10000000"}, {"id": "2", "title": "Televisi", "harga": "7000000"}])
+
+db.barang.find()
+
+db.barang.find({"harga": {$gt: "10000000"}})
